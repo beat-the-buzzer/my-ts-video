@@ -12,7 +12,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     open: true, // 自动打开
-    port: 1717, // 默认8080
+    port: 8081, // 默认8080
   },
   resolve: {
     "extensions": ['.ts', '.js', '.json'], // 加载没有后缀名的文件的时候匹配的顺序 默认js json 所以我们经常在代码里面import js的时候不写后缀
