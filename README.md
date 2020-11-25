@@ -35,4 +35,8 @@ npm install -D ts-loader typescript # ts相关
 
 ### 弹出层组件的实现
 
+1. CSS模块化  import和require的区别：import是TS的语法，require是webpack的语法
+
+使用popup.css.d.ts，声明文件，用于把popup.css这样的文件转换成TS认识的文件
+
 ### 播放器组件的实现

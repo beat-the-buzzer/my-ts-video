@@ -9,9 +9,16 @@ let listItem = document.querySelectorAll('#list li');
 for(let i =0; i < listItem.length; i++) {
   listItem[i].addEventListener('click', function() {
     let { url, title } = this.dataset;
-    console.error('hehe')
     popup({
-      width: '200px',
+      width: '880px',
+      height: '556px',
+      title,
+      pos: 'center',
+      mask: true,
+      content(ele) {
+        console.log('打印出元素');
+        console.log(ele);
+      }
 
     })
   })
