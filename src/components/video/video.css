@@ -1,0 +1,119 @@
+.video {
+  position: relative;
+  overflow: hidden;
+}
+.video-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover；
+}
+.video-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8)
+}
+.video-progress {
+  height: 5px;
+  background: #222223;
+  position: relative;
+  cursor: pointer;
+}
+.video-progress-now {
+  width: 50%;
+  height: 100%;
+  background: #ff6a03;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.video-progress-suc {
+  width: 70%;
+  height: 100%;
+  background: #666;
+  position: absolute;
+  left: 0;
+}
+.video-progress-bar {
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.video-play {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 35px;
+}
+.video-play i {
+  font-size: 20px;
+  color: #fff;
+}
+.video-time {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 30px;
+  color: #fff;
+}
+.video-full {
+  float: right;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 20px;
+}
+.video-full i {
+  font-size: 20px;
+  color: #fff;
+}
+.video-voice {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.video-voice i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+.video-vprogress {
+  width: 100px;
+  height: 5px;
+  background: #222223;
+  position: relative;
+  cursor: pointer;
+}
+.video-vprogress-now {
+  width: 50%;
+  height: 100%;
+  background: #ff6a03;
+
+}
+.video-vprogress-bar {
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}

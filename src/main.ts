@@ -3,6 +3,7 @@
 
 import './main.css';
 import popup from './components/popup/popup';
+import video from './components/video/video';
 
 let listItem = document.querySelectorAll('#list li');
 
@@ -18,6 +19,10 @@ for(let i =0; i < listItem.length; i++) {
       content(ele) {
         console.log('打印出元素');
         console.log(ele);
+        video({
+          url,
+          ele,
+        })
       }
 
     })
