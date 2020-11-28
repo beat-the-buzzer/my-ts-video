@@ -21,6 +21,19 @@ npm install -D file-loader # 文件loader
 npm install -D ts-loader typescript # ts相关
 # 新建一个tsconfig.json
 # 配置webpack的extensions，优先匹配ts文件。
+npm install -D mini-css-extract-plugin # 把style标签整合到CSS文件里面
+```
+
+### VSCode里面配置TSList插件
+
+1. 使用TSLint插件
+
+2. 使用编辑器自带的配置：`setting.json`，
+
+```json
+{
+  "typescript.validate.enable": true,
+}
 ```
 
 ### 组件开发的关键点
@@ -58,3 +71,27 @@ npm install -D ts-loader typescript # ts相关
 我们配置了两部分的css-loader，一部分是针对src/components以外的文件夹，我们将其视作全局CSS，另一部分是针对src/components文件夹里面的CSS，这个一般是组件内部的CSS，CSS只应用于当前的组件。
 
 ### 播放器组件的实现
+
+注意整理，开发思路，在开发之前我们对组件的大致结构和设计思路都会有一定了解，interface里面，我么就大致了解了我们的每一步都是用来干什么的。
+
+如果我们在代码中定义了变量的类型，那么编辑器就会有输入提示，例如，我们定义了 `videoContent: HTMLVideoElement`，在下面调用`requestFullscreen`的时候，编辑器就会有自动提示了。
+
+### 项目打包
+
+1. 分别设置一个生产用的配置文件和开发用的配置文件，在`package.json`的命令里面去做区分
+
+2. 生产配置文件需要改造的地方：
+
+  - mode
+
+  - file-loader的配置：把同类文件放到同一个目录里面去
+
+  - mini-css-extract-plugin: 把打包后生成的style标签整合到CSS文件里面去 把原来的style-loader去掉
+
+###  总结
+
+ - 静态类型检查，可以规范编码方式，让项目更加稳定、健壮
+
+ - 相比于JavaScript，在开发阶段会耗费一定的时间，但是可以整理出一个清晰的开发思路和需求理解
+
+ - 没有必要为了使用TS而去使用TS，比如，我们把项目中每个变量都去定义一个类型，把每一行JS都改成TS，其实是没有必要的。我们的目的是解决实际的开发问题。

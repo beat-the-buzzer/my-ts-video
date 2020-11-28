@@ -19,7 +19,6 @@ interface Icomponent {
   init: () => void;
   template: () => void;
   handle: () => void;
-  createMask: () => void;
 }
 
 function popup(options: Ipopup) {

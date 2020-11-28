@@ -17,11 +17,10 @@ for(let i =0; i < listItem.length; i++) {
       pos: 'center',
       mask: true,
       content(ele) {
-        console.log('打印出元素');
-        console.log(ele);
         video({
           url,
           ele,
+          // autoplay: true, // 配置自动播放
         })
       }
 
