@@ -1,5 +1,7 @@
 ## 基于TypeScript开发播放器组件
 
+[演示地址](https://beat-the-buzzer.github.io/my-ts-video/)
+
 ### 为什么使用TypeScript
 
 1. TypeScript 可以提供静态类型检查，规范团队的编码，适合大型项目的开发
