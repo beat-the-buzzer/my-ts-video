@@ -1,6 +1,6 @@
 // import './popup.css';  // 全局引入CSS
 // import styles from './popup.css'; // 报错，TS不会识别CSS文件 需要写声明文件
-let styles = require('./popup.css').default ? require('./popup.css').default : require('./popup.css');
+let styles = require('./popup.css');
 
 // 与接口文档相关，用于规范组件使用人员和组件文档的编写
 interface Ipopup {

@@ -1,6 +1,6 @@
 import tools from "../tools";
 
-let styles = require('./video.css').default ? require('./video.css').default : require('./video.css');
+let styles = require('./video.css');
 
 interface Ivideo {
   url: string;
